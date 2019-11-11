@@ -3,7 +3,7 @@
 ## Super Concise Intro
 Building enterprise cloud apps used to securely managing APIs, build tooling & automation for various infrastructure(s) and make things go really fast. 
 
-I am trying to be an industry expert but I am really a jack of all trades.
+I am trying to be an industry expert at scalability but I am really a jack of all trades.
 
 ## Long Intro
 A jack of all trades kind of software engineer.
