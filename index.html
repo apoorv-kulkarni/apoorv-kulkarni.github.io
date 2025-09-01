@@ -47,9 +47,9 @@
             flex-direction: column;
         }
 
-        /* Container using CSS Grid */
+        /* Container using CSS Grid - EXPANDED */
         .container {
-            max-width: 1200px;
+            max-width: 900px; /* Increased from 600px */
             margin: 0 auto;
             padding: 0 1rem;
             flex: 1;
@@ -58,14 +58,14 @@
             text-align: center;
         }
 
-        /* Main content area */
+        /* Main content area - WIDER */
         .hero-section {
             padding: 3rem 2rem;
             background-color: var(--card-bg);
             border-radius: 16px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             border: 1px solid var(--border-color);
-            max-width: 600px;
+            max-width: 800px; /* Increased from 600px */
             width: 100%;
         }
 
@@ -79,7 +79,14 @@
         .lead-text {
             font-size: 1.25rem;
             color: var(--text-color);
+            margin-bottom: 0.25rem; /* Reduced spacing */
+        }
+
+        .location-text {
+            font-size: 1.1rem;
+            color: var(--text-color);
             margin-bottom: 0.5rem;
+            font-weight: 300; /* Slightly lighter weight */
         }
 
         .disclaimer {
@@ -119,8 +126,6 @@
             background-color: #333;
         }
 
-        /* Remove platform-specific colors - all icons now use consistent styling */
-
         /* Footer */
         .footer {
             padding: 2rem 0;
@@ -147,15 +152,24 @@
                 height: 50px;
                 font-size: 1.25rem;
             }
+            
+            /* Allow normal text behavior on smaller screens */
+            .lead-text {
+                font-size: 1.1rem;
+            }
+            
+            .location-text {
+                font-size: 1rem;
+            }
         }
 
         @media (max-width: 480px) {
             .hero-section {
-                padding: 1rem 0;
+                padding: 2rem 1rem;
             }
             
             .lead-text {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
             
             .disclaimer {
@@ -197,7 +211,8 @@
     <div class="container">
         <main class="hero-section">
             <h1 class="brand-heading">Apoorv Kulkarni</h1>
-            <p class="lead-text">Software Engineer | Perpetual Student | San Francisco Bay Area</p>
+            <p class="lead-text">Software Engineer | Perpetual Student</p>
+            <p class="location-text">San Francisco Bay Area</p>
             <p class="disclaimer">Views expressed anywhere on the internet are of my own.</p>
             
             <nav class="social-links" aria-label="Social media links">
