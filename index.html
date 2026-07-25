@@ -19,6 +19,14 @@
     <meta name="twitter:site" content="@KulkarniApoorv">
     <meta name="twitter:title" content="Apoorv Kulkarni">
     <meta name="twitter:description" content="Senior Software Engineer, Reliability at Roblox focused on platform engineering, cloud infrastructure, and backend systems.">
+
+    <!-- Must run before first paint, or a stored theme flashes the system default. -->
+    <script>
+        (function () {
+            const stored = localStorage.getItem('theme');
+            if (stored) document.documentElement.setAttribute('data-theme', stored);
+        })();
+    </script>
     <style>
         /* Modern CSS Reset */
         * {
@@ -317,8 +325,6 @@
         (function () {
             const root = document.documentElement;
             const toggle = document.querySelector('.theme-toggle');
-            const stored = localStorage.getItem('theme');
-            if (stored) root.setAttribute('data-theme', stored);
 
             toggle.addEventListener('click', function () {
                 const current = root.getAttribute('data-theme');
