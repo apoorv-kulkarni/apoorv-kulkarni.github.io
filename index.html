@@ -628,10 +628,21 @@
             function finishLeave(panel) {
                 panel.hidden = true;
                 panel.classList.remove('is-leave-active', 'is-leave-to');
+                panel.getAnimations().forEach(function (animation) { animation.cancel(); });
             }
 
             function finishEnter(panel) {
                 panel.classList.remove('is-enter-active', 'is-enter-from');
+                panel.getAnimations().forEach(function (animation) { animation.cancel(); });
+            }
+
+            function fadeKeyframes(hiding) {
+                const vertical = window.matchMedia('(min-width: 769px)').matches;
+                const visible = { opacity: 1, transform: 'translateY(0px)' };
+                const hidden = vertical
+                    ? { opacity: 0, transform: 'translateY(20px)' }
+                    : { opacity: 0, transform: 'translateY(0px)' };
+                return hiding ? [visible, hidden] : [hidden, visible];
             }
 
             function selectTab(nextTab, { instant } = {}) {
@@ -647,7 +658,7 @@
                     tab.tabIndex = active ? 0 : -1;
                 });
 
-                if (instant || reduced.matches) {
+                if (instant || reduced.matches || typeof currentPanel.animate !== 'function') {
                     currentPanel.hidden = true;
                     finishLeave(currentPanel);
                     nextPanel.hidden = false;
@@ -656,24 +667,29 @@
                 }
 
                 busy = true;
-                currentPanel.classList.add('is-leave-active');
-                currentPanel.offsetWidth;
-                currentPanel.classList.add('is-leave-to');
-
-                window.setTimeout(function () {
+                const ease = 'cubic-bezier(0.65, 0, 0.35, 1)';
+                currentPanel.animate(fadeKeyframes(true), {
+                    duration: LEAVE_MS,
+                    easing: ease,
+                    fill: 'forwards'
+                }).finished.then(function () {
                     finishLeave(currentPanel);
-
                     nextPanel.hidden = false;
-                    nextPanel.classList.add('is-enter-from');
-                    nextPanel.offsetWidth;
-                    nextPanel.classList.add('is-enter-active');
-                    nextPanel.classList.remove('is-enter-from');
-
-                    window.setTimeout(function () {
-                        finishEnter(nextPanel);
-                        busy = false;
-                    }, ENTER_DELAY_MS + ENTER_MS);
-                }, LEAVE_MS);
+                    return nextPanel.animate(fadeKeyframes(false), {
+                        duration: ENTER_MS,
+                        delay: ENTER_DELAY_MS,
+                        easing: ease,
+                        fill: 'both'
+                    }).finished;
+                }).then(function () {
+                    finishEnter(nextPanel);
+                    busy = false;
+                }).catch(function () {
+                    finishLeave(currentPanel);
+                    nextPanel.hidden = false;
+                    finishEnter(nextPanel);
+                    busy = false;
+                });
             }
 
             tabs.forEach(function (tab) {
