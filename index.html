@@ -645,6 +645,10 @@
                 return hiding ? [visible, hidden] : [hidden, visible];
             }
 
+            function sleep(ms) {
+                return new Promise(function (resolve) { window.setTimeout(resolve, ms); });
+            }
+
             function selectTab(nextTab, { instant } = {}) {
                 const nextPanel = document.getElementById(nextTab.getAttribute('aria-controls'));
                 const currentTab = tabs.find(function (tab) { return tab.getAttribute('aria-selected') === 'true'; });
@@ -674,18 +678,28 @@
                     fill: 'forwards'
                 }).finished.then(function () {
                     finishLeave(currentPanel);
+                    const incoming = fadeKeyframes(false)[0];
+                    nextPanel.style.opacity = incoming.opacity;
+                    if (incoming.transform) nextPanel.style.transform = incoming.transform;
                     nextPanel.hidden = false;
+                    nextPanel.offsetWidth;
+                    return sleep(ENTER_DELAY_MS);
+                }).then(function () {
                     return nextPanel.animate(fadeKeyframes(false), {
                         duration: ENTER_MS,
-                        delay: ENTER_DELAY_MS,
                         easing: ease,
                         fill: 'both'
                     }).finished;
                 }).then(function () {
+                    nextPanel.style.removeProperty('opacity');
+                    nextPanel.style.removeProperty('transform');
                     finishEnter(nextPanel);
                     busy = false;
                 }).catch(function () {
+                    currentPanel.hidden = true;
                     finishLeave(currentPanel);
+                    nextPanel.style.removeProperty('opacity');
+                    nextPanel.style.removeProperty('transform');
                     nextPanel.hidden = false;
                     finishEnter(nextPanel);
                     busy = false;
