@@ -247,6 +247,22 @@
             width: 100%;
         }
 
+        /* Keep stacked panels in layout so height does not collapse, and so
+           enter transitions can run (display:none skips CSS transitions). */
+        .spec-panel[hidden] {
+            display: block;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .spec-panel.is-leave-active,
+        .spec-panel.is-enter-active,
+        .spec-panel.is-enter-from,
+        .spec-panel.is-leave-to {
+            visibility: visible;
+            pointer-events: none;
+        }
+
         .spec-panel.is-leave-active,
         .spec-panel.is-enter-active {
             transition: opacity var(--leave-ms) var(--ease-lux), transform var(--leave-ms) var(--ease-lux);
@@ -603,13 +619,19 @@
                 const wrapper = tabsRoot.querySelector('.spec-panels');
                 let max = 0;
                 panels.forEach(function (panel) {
-                    const wasHidden = panel.hidden;
-                    panel.hidden = false;
                     max = Math.max(max, panel.offsetHeight);
-                    panel.hidden = wasHidden;
                 });
                 wrapper.style.setProperty('--tabs-min-height', max + 'px');
                 tabsRoot.style.setProperty('--tabs-min-height', max + 'px');
+            }
+
+            function finishLeave(panel) {
+                panel.hidden = true;
+                panel.classList.remove('is-leave-active', 'is-leave-to');
+            }
+
+            function finishEnter(panel) {
+                panel.classList.remove('is-enter-active', 'is-enter-from');
             }
 
             function selectTab(nextTab, { instant } = {}) {
@@ -627,30 +649,28 @@
 
                 if (instant || reduced.matches) {
                     currentPanel.hidden = true;
+                    finishLeave(currentPanel);
                     nextPanel.hidden = false;
+                    finishEnter(nextPanel);
                     return;
                 }
 
                 busy = true;
                 currentPanel.classList.add('is-leave-active');
-                requestAnimationFrame(function () {
-                    currentPanel.classList.add('is-leave-to');
-                });
+                currentPanel.offsetWidth;
+                currentPanel.classList.add('is-leave-to');
 
                 window.setTimeout(function () {
-                    currentPanel.hidden = true;
-                    currentPanel.classList.remove('is-leave-active', 'is-leave-to');
+                    finishLeave(currentPanel);
 
                     nextPanel.hidden = false;
-                    nextPanel.classList.add('is-enter-from', 'is-enter-active');
-                    requestAnimationFrame(function () {
-                        requestAnimationFrame(function () {
-                            nextPanel.classList.remove('is-enter-from');
-                        });
-                    });
+                    nextPanel.classList.add('is-enter-from');
+                    nextPanel.offsetWidth;
+                    nextPanel.classList.add('is-enter-active');
+                    nextPanel.classList.remove('is-enter-from');
 
                     window.setTimeout(function () {
-                        nextPanel.classList.remove('is-enter-active');
+                        finishEnter(nextPanel);
                         busy = false;
                     }, ENTER_DELAY_MS + ENTER_MS);
                 }, LEAVE_MS);
