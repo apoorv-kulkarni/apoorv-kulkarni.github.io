@@ -76,6 +76,8 @@ I also ship Go on the side, including Vigiles, a zero-dependency supply chain sc
 
 One tenure on LinkedIn and on the site. Recruiter will have both open. Do not split into two titles until there is a real title-change date.
 
+The site is the short portfolio: Role, Tenure, Windows fleet, Control plane. The cell lifecycle, bringup, and non-production bullets below are LinkedIn-only.
+
 **Title:** Senior Software Engineer, Reliability
 **Dates:** September 2020 to Present
 **Location:** San Francisco Bay Area
@@ -83,10 +85,10 @@ One tenure on LinkedIn and on the site. Recruiter will have both open. Do not sp
 ```
 Founding engineer on the pod that owns compute-cell lifecycle. Cells were being built and run, but never systematically taken down. I defined the decommission path and made it repeatable.
 
+- Maintained the Windows fleet, then defined the decommission path and helped teams migrate off it onto Linux. Retiring Windows stopped being a one-off project.
 - Built the automation that stands a cell up from a declared input instead of a hand-run sequence. Restructuring the workspace and state layout brought Terraform init in a production workspace from minutes to roughly a second.
 - The bringup path originally produced production environments only. I extended it so non-production comes from the same code, which means a change to the lifecycle path is exercised before it reaches a production cell.
 - Control plane: Kubernetes, Nomad, Consul, Vault, Terraform, across bare-metal sites.
-- Stack: Go, Python, Linux, Kubernetes, Nomad, Consul, Vault, Terraform.
 ```
 
 If you can name one multi-quarter, multi-team initiative, it belongs as the first bullet. That is the Staff/Principal gap. Headline changes will not cover it.
