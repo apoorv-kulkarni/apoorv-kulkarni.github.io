@@ -83,19 +83,14 @@ Spell the current title out: **Senior Software Engineer, Reliability** (not “S
 **Location:** San Francisco Bay Area
 
 ```
-Founding engineer on the Cell Lifecycle and Automation pod. I build the automation that provisions, validates, drains, repairs, and decommissions compute cells across Roblox’s bare-metal fleet.
+Founding engineer on the pod that owns compute-cell lifecycle: provision, validate, drain, repair, and decommission. Defined the teardown path when none existed, then reused it.
 
-- Built lifecycle automation for compute cells on the bare-metal fleet: provision, validate, drain, repair, and decommission.
-- Wrote drain and recovery automation in Go so nodes can leave service without a customer-visible hit, replacing a manual runbook.
-- Own fleet-health signals that distinguish a cluster reporting healthy from a cluster actually serving traffic.
+- Extended the generator and one-click orchestrator so non-production environments are first-class — the platform had only generated production. Cut Terraform init in a production workspace from minutes to about a second.
+- Drove the first edge environments of that kind in a production colo, then encoded the gaps so later environments did not pay the same cost.
+- Brought production cells up across new sites, including a Kubernetes-only replacement site and intern-led bringup through to a traffic handoff.
+- Root-cause when the cluster reports healthy but is not serving — health checks on the wrong TLS port, a process that reloaded config but never restarted.
 - Orchestration across Kubernetes and Nomad, with Consul for service discovery, Vault for secrets, and Terraform for declarative fleet state.
 - Stack: Go, Python, Linux, Kubernetes, Nomad, Consul, Vault, Terraform, Prometheus, Grafana.
-```
-
-Add a first bullet with public-safe numbers if you have them:
-
-```
-- Automated the lifecycle of [N] compute cells across [N] bare-metal clusters and [N] regions, reducing time-to-serve for a new cell from [X] to [Y].
 ```
 
 ### Position 2 — prior title at Roblox
