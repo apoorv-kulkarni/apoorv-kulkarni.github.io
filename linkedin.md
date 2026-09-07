@@ -76,7 +76,7 @@ I also ship Go on the side, including Vigiles, a zero-dependency supply chain sc
 
 One tenure on LinkedIn and on the site. Recruiter will have both open. Do not split into two titles until there is a real title-change date.
 
-The site is the short portfolio: Role, Tenure, Windows fleet, Control plane. The cell lifecycle, bringup, and non-production bullets below are LinkedIn-only.
+The site is the short portfolio: Role, Tenure, Scope. Scope is one row: Windows fleet decommission onto Linux, then the control-plane stack across bare-metal sites. The cell lifecycle, bringup, and non-production bullets below are LinkedIn-only.
 
 **Title:** Senior Software Engineer, Reliability
 **Dates:** September 2020 to Present
