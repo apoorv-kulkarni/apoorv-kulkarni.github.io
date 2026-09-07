@@ -4,7 +4,9 @@ Apply in this order. Each step is independent; headline and top skills take two 
 
 Do not paste bracketed placeholders. Fill them or drop the bullet.
 
-Numbers not in your LinkedIn PDF were left out on purpose (cell count, cluster count, regions, time-to-serve, MTTR, PoP count, incident volume). Add any you can say publicly.
+Numbers not in your LinkedIn PDF were left out on purpose (cell count, cluster count, regions, time-to-serve, MTTR, PoP count, incident volume). Add any you can say publicly. Do not invent them.
+
+Site and LinkedIn use one Roblox position: Senior Software Engineer, Reliability, September 2020 to Present. There is no public title-change date.
 
 ---
 
@@ -24,7 +26,7 @@ Keeps your real title. Puts the search terms in the field LinkedIn weights most.
 Compute & Cluster Infrastructure at hyperscale | Senior Software Engineer, Reliability @ Roblox | Bare-metal fleet lifecycle, Kubernetes, Nomad, Go, Terraform
 ```
 
-Do not change the job title to “Senior Infrastructure Engineer.” That is not the title on the PDF.
+Do not change the job title to "Senior Infrastructure Engineer." That is not the title on the PDF.
 
 ---
 
@@ -53,14 +55,14 @@ At Roblox I work on cluster and cell lifecycle: how capacity is provisioned, bro
 
 I write Go and Python that talks to real hardware in real datacenters, with Kubernetes and Nomad for orchestration, Consul and Vault for discovery and secrets, and Terraform for declarative state.
 
-Before Roblox: five and a half years at IBM on API Connect — production SRE across 30+ cloud environments worldwide, plus the internal tooling that kept them stable.
+Before Roblox: five and a half years at IBM on API Connect - production SRE across 30+ cloud environments worldwide, plus the internal tooling that kept them stable.
 
 I care about the parts that are hard to see. What happens when a node dies mid-drain. Why a config that is correct on disk is not the one the running process loaded. How you tell a cluster reporting healthy from a cluster actually serving traffic.
 
 Interested in compute and cluster infrastructure roles where the scale of the fleet is the hard problem.
 ```
 
-Removed: “DevOps,” the desktop/SaaS generalist line, the query-latency number (strong, but it pulls toward app backend), and “the guy teammates call when systems are failing” (Senior firefighter, not Staff systems).
+Removed: "DevOps," the desktop/SaaS generalist line, the query-latency number (strong, but it pulls toward app backend), and "the guy teammates call when systems are failing" (Senior firefighter, not Staff systems).
 
 Optional last paragraph if you want Featured/Projects to mention Vigiles and it is public:
 
@@ -70,16 +72,12 @@ I also ship Go on the side, including Vigiles, a zero-dependency supply chain sc
 
 ---
 
-## 4. Roblox: split into two positions (recommendation)
+## 4. Roblox - one position
 
-LinkedIn allows multiple titles under one company. One title for 6 years 1 month erases the SRE to SWE Reliability move and the Cell Lifecycle pod.
+One tenure on LinkedIn and on the site. Recruiter will have both open. Do not split into two titles until there is a real title-change date.
 
-Keep this as a recommendation until the title-change month is known. Do not invent a date. Spell the current title out: **Senior Software Engineer, Reliability** (not "Sr").
-
-### Position 1: current
-
-**Title:** Senior Software Engineer, Reliability  
-**Dates:** [month you moved into this title] to Present  
+**Title:** Senior Software Engineer, Reliability
+**Dates:** September 2020 to Present
 **Location:** San Francisco Bay Area
 
 ```
@@ -87,24 +85,11 @@ Founding engineer on the pod that owns compute-cell lifecycle. Cells were being 
 
 - Built the automation that stands a cell up from a declared input instead of a hand-run sequence. Restructuring the workspace and state layout brought Terraform init in a production workspace from minutes to roughly a second.
 - The bringup path originally produced production environments only. I extended it so non-production comes from the same code, which means a change to the lifecycle path is exercised before it reaches a production cell.
-- Control plane: Kubernetes, Nomad, Consul, Vault, Terraform, across bare-metal sites, including a Kubernetes-only site.
+- Control plane: Kubernetes, Nomad, Consul, Vault, Terraform, across bare-metal sites.
 - Stack: Go, Python, Linux, Kubernetes, Nomad, Consul, Vault, Terraform.
 ```
 
-### Position 2 — prior title at Roblox
-
-**Title:** Senior Site Reliability Engineer  
-**Dates:** September 2020 – [month before the title above]
-
-```
-Global edge and point-of-presence infrastructure for a platform serving 140M+ daily active users.
-
-- Took bare-metal points of presence from hardware handoff through automated config convergence and health validation.
-- Built and operated edge-cell and PoP deployment workflows spanning infrastructure, networking, orchestration, and production readiness.
-- Converted production incident root causes into automation rather than longer runbooks.
-```
-
-If you can name one multi-quarter, multi-team initiative, it belongs as the first bullet on one of these two roles. That is the Staff/Principal gap. Headline changes will not cover it.
+If you can name one multi-quarter, multi-team initiative, it belongs as the first bullet. That is the Staff/Principal gap. Headline changes will not cover it.
 
 ---
 
@@ -122,13 +107,13 @@ Internal tooling and production SRE for IBM API Connect.
 - Diagnosed and remediated production reliability and performance issues on API Connect so environments stayed available.
 ```
 
-Delete: “the whole nine yards,” “Sometimes I have fun building slack integration,” “all hands on deck,” “fixing production issues on the fly.”
+Delete: "the whole nine yards," "Sometimes I have fun building slack integration," "all hands on deck," "fixing production issues on the fly."
 
 ---
 
 ## 6. Techlore
 
-Keep the role. The stack is old; the customer work is not. Cut the fifteen-bullet dump and “Think; Think again; Debate; Negotiate.” Lead with sitting in the room with customers.
+Keep the role. The stack is old; the customer work is not. Cut the fifteen-bullet dump and "Think; Think again; Debate; Negotiate." Lead with sitting in the room with customers.
 
 **Title:** Software Developer  
 **Dates:** August 2011 – July 2013  
@@ -137,7 +122,7 @@ Keep the role. The stack is old; the customer work is not. Cut the fifteen-bulle
 ```
 Small product shop. I wore a lot of hats, including sitting with customers face to face.
 
-- Worked directly with customers on requirements, delivery, and training — including going on-site / offshore to deploy and train the people using the product.
+- Worked directly with customers on requirements, delivery, and training - including going on-site / offshore to deploy and train the people using the product.
 - Translated what customers actually needed into software, and owned the conversation between the client and the rest of the team.
 - Led a team of four and took three projects through to ship.
 - Cut a business-critical process from 30 minutes to under a minute.
@@ -170,4 +155,4 @@ Leave as-is:
 
 ## Why this order
 
-Your About already said compute, edge, 140M+ DAU, cells, and PoPs. The PDF’s Experience and pinned skills did not. Recruiters search headline + skills + job text. “Scaling Infra @ Roblox” plus Chef/Prometheus/Grafana plus one generic Roblox sentence is why you read as a 2018 SRE generalist instead of someone who runs physical fleets at Roblox scale.
+Your About already said compute, 140M+ DAU, cells, and fleet lifecycle. The PDF's Experience and pinned skills did not. Recruiters search headline + skills + job text. "Scaling Infra @ Roblox" plus Chef/Prometheus/Grafana plus one generic Roblox sentence is why you read as a 2018 SRE generalist instead of someone who runs physical fleets at Roblox scale.
