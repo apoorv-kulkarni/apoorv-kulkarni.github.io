@@ -3,20 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Senior Software Engineer, Reliability at Roblox focused on platform engineering, cloud infrastructure, and backend systems.">
+    <meta name="description" content="Senior Software Engineer, Reliability at Roblox. Compute and cluster infrastructure: cell lifecycle, edge PoPs, and bare-metal fleet automation for 140M+ daily active users.">
     <meta name="author" content="Apoorv Kulkarni">
     <title>Apoorv Kulkarni</title>
 
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://apoorvkulkarni.com">
     <meta property="og:title" content="Apoorv Kulkarni">
-    <meta property="og:description" content="Senior Software Engineer, Reliability at Roblox focused on platform engineering, cloud infrastructure, and backend systems.">
+    <meta property="og:description" content="Senior Software Engineer, Reliability at Roblox. Compute and cluster infrastructure: cell lifecycle, edge PoPs, and bare-metal fleet automation for 140M+ daily active users.">
     <meta property="og:locale" content="en_US">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@KulkarniApoorv">
     <meta name="twitter:title" content="Apoorv Kulkarni">
-    <meta name="twitter:description" content="Senior Software Engineer, Reliability at Roblox focused on platform engineering, cloud infrastructure, and backend systems.">
+    <meta name="twitter:description" content="Senior Software Engineer, Reliability at Roblox. Compute and cluster infrastructure: cell lifecycle, edge PoPs, and bare-metal fleet automation for 140M+ daily active users.">
 
     <script>
         (function () {
@@ -315,6 +315,18 @@
             font-weight: 400;
         }
 
+        .spec-group + .spec-group {
+            margin-top: 2.4rem;
+        }
+
+        .spec-group-title {
+            font-size: 0.72rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 0.15rem;
+        }
+
         @media (min-width: 769px) {
             .page {
                 padding-top: 5.5rem;
@@ -428,7 +440,7 @@
             <h1 class="brand-heading">Apoorv Kulkarni</h1>
             <p class="lead-text">Senior Software Engineer, Reliability @ Roblox</p>
             <p class="location-text">San Francisco Bay Area</p>
-            <p class="about-text">Broad background across SRE, backend engineering, and DevOps — from database design and APIs to the cloud infrastructure and CI/CD pipelines that ship and run it all.</p>
+            <p class="about-text">I build compute and cluster infrastructure — cell lifecycle, edge PoPs, and the automation that brings bare-metal capacity into production for 140M+ daily active users.</p>
             <nav class="social-links" aria-label="Social media links">
                 <a href="https://github.com/apoorv-kulkarni"
                    class="social-icon github"
@@ -475,76 +487,125 @@
 
             <div class="spec-panels">
                 <div class="spec-panel" id="panel-experience" role="tabpanel" aria-labelledby="tab-experience" data-print-title="Experience">
-                    <ul class="spec-list">
-                        <li class="spec-item">
-                            <div class="spec-row">
-                                <span class="spec-label">Title</span>
-                                <span class="spec-value">Senior Software Engineer, Reliability</span>
-                            </div>
-                        </li>
-                        <li class="spec-item">
-                            <div class="spec-row">
-                                <span class="spec-label">Company</span>
-                                <span class="spec-value">Roblox</span>
-                            </div>
-                        </li>
-                        <li class="spec-item">
-                            <div class="spec-row">
-                                <span class="spec-label">Tenure</span>
-                                <span class="spec-value">September 2020 – Present</span>
-                            </div>
-                        </li>
-                        <li class="spec-item">
-                            <div class="spec-row">
-                                <span class="spec-label">Location</span>
-                                <span class="spec-value">San Francisco Bay Area</span>
-                            </div>
-                        </li>
-                        <li class="spec-item">
-                            <div class="spec-row">
-                                <span class="spec-label">Domain</span>
-                                <span class="spec-value">Compute and edge infrastructure</span>
-                            </div>
-                        </li>
-                        <li class="spec-item">
-                            <div class="spec-row">
-                                <span class="spec-label">Scope</span>
-                                <span class="spec-value">Platform reliability, infrastructure, and the internal systems that keep things running at scale</span>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="spec-group">
+                        <h2 class="spec-group-title">Roblox</h2>
+                        <ul class="spec-list">
+                            <li class="spec-item">
+                                <div class="spec-row">
+                                    <span class="spec-label">Role</span>
+                                    <span class="spec-value">Senior Software Engineer, Reliability</span>
+                                </div>
+                            </li>
+                            <li class="spec-item">
+                                <div class="spec-row">
+                                    <span class="spec-label">Tenure</span>
+                                    <span class="spec-value">September 2020 – Present</span>
+                                </div>
+                            </li>
+                            <li class="spec-item">
+                                <div class="spec-row">
+                                    <span class="spec-label">Cell lifecycle</span>
+                                    <span class="spec-value">Founding engineer on Cell Lifecycle and Automation. I write the software that provisions, validates, drains, repairs, and decommissions compute cells on the bare-metal fleet.</span>
+                                </div>
+                            </li>
+                            <li class="spec-item">
+                                <div class="spec-row">
+                                    <span class="spec-label">Edge</span>
+                                    <span class="spec-value">Point-of-presence and edge-cell work for a platform serving 140M+ daily active users.</span>
+                                </div>
+                            </li>
+                            <li class="spec-item">
+                                <div class="spec-row">
+                                    <span class="spec-label">Control plane</span>
+                                    <span class="spec-value">Kubernetes and Nomad for orchestration, Consul and Vault for discovery and secrets, Terraform for declarative fleet state.</span>
+                                </div>
+                            </li>
+                            <li class="spec-item">
+                                <div class="spec-row">
+                                    <span class="spec-label">Stack</span>
+                                    <span class="spec-value">Go, Python, Linux, Kubernetes, Nomad, Consul, Vault, Terraform</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="spec-group">
+                        <h2 class="spec-group-title">IBM</h2>
+                        <ul class="spec-list">
+                            <li class="spec-item">
+                                <div class="spec-row">
+                                    <span class="spec-label">Role</span>
+                                    <span class="spec-value">Software Engineer, API Connect</span>
+                                </div>
+                            </li>
+                            <li class="spec-item">
+                                <div class="spec-row">
+                                    <span class="spec-label">Tenure</span>
+                                    <span class="spec-value">January 2015 – June 2020</span>
+                                </div>
+                            </li>
+                            <li class="spec-item">
+                                <div class="spec-row">
+                                    <span class="spec-label">Scope</span>
+                                    <span class="spec-value">Production SRE and internal tooling across 30+ cloud environments worldwide. Kept API Connect available; built the monitoring, deployment, and automation those teams ran on.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="spec-group">
+                        <h2 class="spec-group-title">Earlier</h2>
+                        <ul class="spec-list">
+                            <li class="spec-item">
+                                <div class="spec-row">
+                                    <span class="spec-label">Techlore</span>
+                                    <span class="spec-value">Software developer, 2011–2013. Led a team of four. Cut a business-critical process from 30 minutes to under a minute.</span>
+                                </div>
+                            </li>
+                            <li class="spec-item">
+                                <div class="spec-row">
+                                    <span class="spec-label">Education</span>
+                                    <span class="spec-value">M.S. Computer Engineering, Syracuse University. B.Eng. Computer Engineering, Savitribai Phule Pune University.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="spec-panel" id="panel-skills" role="tabpanel" aria-labelledby="tab-skills" hidden data-print-title="Skills">
                     <ul class="spec-list">
                         <li class="spec-item">
                             <div class="spec-row">
+                                <span class="spec-label">Primary</span>
+                                <span class="spec-value">Kubernetes, distributed systems, Go</span>
+                            </div>
+                        </li>
+                        <li class="spec-item">
+                            <div class="spec-row">
+                                <span class="spec-label">Compute</span>
+                                <span class="spec-value">Bare-metal fleet lifecycle, cluster and cell automation, edge PoPs</span>
+                            </div>
+                        </li>
+                        <li class="spec-item">
+                            <div class="spec-row">
+                                <span class="spec-label">Orchestration</span>
+                                <span class="spec-value">Nomad, Consul, Vault, Terraform, Linux</span>
+                            </div>
+                        </li>
+                        <li class="spec-item">
+                            <div class="spec-row">
+                                <span class="spec-label">Languages</span>
+                                <span class="spec-value">Go, Python</span>
+                            </div>
+                        </li>
+                        <li class="spec-item">
+                            <div class="spec-row">
                                 <span class="spec-label">Reliability</span>
-                                <span class="spec-value">Site reliability, platform operations, systems that stay up under load</span>
+                                <span class="spec-value">Site reliability, incident response, fleet health vs. actually serving traffic</span>
                             </div>
                         </li>
                         <li class="spec-item">
                             <div class="spec-row">
-                                <span class="spec-label">Platform</span>
-                                <span class="spec-value">Cloud infrastructure, CI/CD, and the foundations engineering teams ship on</span>
-                            </div>
-                        </li>
-                        <li class="spec-item">
-                            <div class="spec-row">
-                                <span class="spec-label">Backend</span>
-                                <span class="spec-value">APIs, database design, and service architecture</span>
-                            </div>
-                        </li>
-                        <li class="spec-item">
-                            <div class="spec-row">
-                                <span class="spec-label">Hats worn</span>
-                                <span class="spec-value">SRE, backend engineer, DevOps, occasional team lead</span>
-                            </div>
-                        </li>
-                        <li class="spec-item">
-                            <div class="spec-row">
-                                <span class="spec-label">Products</span>
-                                <span class="spec-value">Desktop apps through enterprise SaaS</span>
+                                <span class="spec-label">Observability</span>
+                                <span class="spec-value">Prometheus, Grafana</span>
                             </div>
                         </li>
                     </ul>
@@ -555,25 +616,31 @@
                         <li class="spec-item">
                             <div class="spec-row">
                                 <span class="spec-label">Focus</span>
-                                <span class="spec-value">Scalability and platform engineering</span>
+                                <span class="spec-value">The systems that turn raw machines into usable compute</span>
                             </div>
                         </li>
                         <li class="spec-item">
                             <div class="spec-row">
-                                <span class="spec-label">Aim</span>
-                                <span class="spec-value">Foundations that let teams move fast without breaking things</span>
+                                <span class="spec-label">Constraint</span>
+                                <span class="spec-value">At 140M+ DAU, a stuck provision or a bad drain is a user-visible outage, not a ticket</span>
                             </div>
                         </li>
                         <li class="spec-item">
                             <div class="spec-row">
-                                <span class="spec-label">Picture</span>
-                                <span class="spec-value">From database design and backend APIs to the cloud and pipelines that run them</span>
+                                <span class="spec-label">Failure modes</span>
+                                <span class="spec-value">A node dying mid-drain. A config that is correct on disk but not what the process loaded. A cluster that reports healthy and is not serving.</span>
                             </div>
                         </li>
                         <li class="spec-item">
                             <div class="spec-row">
-                                <span class="spec-label">Practice</span>
-                                <span class="spec-value">Read broadly, try new tools, keep what works</span>
+                                <span class="spec-label">Seniority</span>
+                                <span class="spec-value">Not the person you call when it breaks. The systems that make that call unnecessary.</span>
+                            </div>
+                        </li>
+                        <li class="spec-item">
+                            <div class="spec-row">
+                                <span class="spec-label">Next</span>
+                                <span class="spec-value">Compute and cluster infrastructure where the scale of the fleet is the hard problem</span>
                             </div>
                         </li>
                     </ul>
