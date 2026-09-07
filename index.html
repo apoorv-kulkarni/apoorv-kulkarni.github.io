@@ -530,31 +530,31 @@
                             <li class="spec-item">
                                 <div class="spec-row">
                                     <span class="spec-label">Tenure</span>
-                                    <span class="spec-value">September 2020 – Present</span>
+                                    <span class="spec-value">September 2020 to Present</span>
                                 </div>
                             </li>
                             <li class="spec-item">
                                 <div class="spec-row">
                                     <span class="spec-label">Cell lifecycle</span>
-                                    <span class="spec-value">Founding engineer on the pod that owns compute-cell lifecycle: provision, validate, drain, repair, decommission. Defined the teardown path when none existed, then reused it.</span>
+                                    <span class="spec-value">Founding engineer on the pod that owns compute-cell lifecycle. Cells were being built and run, but never systematically taken down. I defined the decommission path and made it repeatable.</span>
                                 </div>
                             </li>
                             <li class="spec-item">
                                 <div class="spec-row">
                                     <span class="spec-label">Bringup</span>
-                                    <span class="spec-value">Automated cell bringup. Cut Terraform init in a production workspace from minutes to about a second.</span>
+                                    <span class="spec-value">Built the automation that stands a cell up from a declared input instead of a hand-run sequence. Restructuring the workspace and state layout brought Terraform init in a production workspace from minutes to roughly a second.</span>
                                 </div>
                             </li>
                             <li class="spec-item">
                                 <div class="spec-row">
-                                    <span class="spec-label">Edge</span>
-                                    <span class="spec-value">Production cells at new sites, including a Kubernetes-only site.</span>
+                                    <span class="spec-label">Non-production</span>
+                                    <span class="spec-value">The bringup path originally produced production environments only. I extended it so non-production comes from the same code, which means a change to the lifecycle path is exercised before it reaches a production cell.</span>
                                 </div>
                             </li>
                             <li class="spec-item">
                                 <div class="spec-row">
                                     <span class="spec-label">Control plane</span>
-                                    <span class="spec-value">Kubernetes, Nomad, Consul, Vault, Terraform.</span>
+                                    <span class="spec-value">Kubernetes, Nomad, Consul, Vault, Terraform, across bare-metal sites, including a Kubernetes-only site.</span>
                                 </div>
                             </li>
                             <li class="spec-item">
@@ -655,7 +655,19 @@
                         <li class="spec-item">
                             <div class="spec-row">
                                 <span class="spec-label">Reliability</span>
-                                <span class="spec-value">Site reliability, incident response, fleet health vs. actually serving traffic</span>
+                                <span class="spec-value">Site reliability, incident response</span>
+                            </div>
+                        </li>
+                        <li class="spec-item">
+                            <div class="spec-row">
+                                <span class="spec-label">Health</span>
+                                <span class="spec-value">Signals that answer whether a cell is serving, not whether its processes started</span>
+                            </div>
+                        </li>
+                        <li class="spec-item">
+                            <div class="spec-row">
+                                <span class="spec-label">Convergence</span>
+                                <span class="spec-value">The lifecycle path verifies loaded state, not only what is in the repo</span>
                             </div>
                         </li>
                         <li class="spec-item">

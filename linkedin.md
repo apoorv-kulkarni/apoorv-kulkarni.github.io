@@ -70,24 +70,24 @@ I also ship Go on the side, including Vigiles, a zero-dependency supply chain sc
 
 ---
 
-## 4. Roblox — split into two positions
+## 4. Roblox: split into two positions (recommendation)
 
-LinkedIn allows multiple titles under one company. One title for 6 years 1 month erases the SRE → SWE Reliability move and the Cell Lifecycle pod.
+LinkedIn allows multiple titles under one company. One title for 6 years 1 month erases the SRE to SWE Reliability move and the Cell Lifecycle pod.
 
-Spell the current title out: **Senior Software Engineer, Reliability** (not “Sr”).
+Keep this as a recommendation until the title-change month is known. Do not invent a date. Spell the current title out: **Senior Software Engineer, Reliability** (not "Sr").
 
-### Position 1 — current
+### Position 1: current
 
 **Title:** Senior Software Engineer, Reliability  
-**Dates:** [month you moved into this title] – Present  
+**Dates:** [month you moved into this title] to Present  
 **Location:** San Francisco Bay Area
 
 ```
-Founding engineer on the pod that owns compute-cell lifecycle: provision, validate, drain, repair, and decommission. Defined the teardown path when none existed, then reused it.
+Founding engineer on the pod that owns compute-cell lifecycle. Cells were being built and run, but never systematically taken down. I defined the decommission path and made it repeatable.
 
-- Automated cell bringup. Cut Terraform init in a production workspace from minutes to about a second.
-- Production cells at new sites, including a Kubernetes-only site.
-- Control plane: Kubernetes, Nomad, Consul, Vault, Terraform.
+- Built the automation that stands a cell up from a declared input instead of a hand-run sequence. Restructuring the workspace and state layout brought Terraform init in a production workspace from minutes to roughly a second.
+- The bringup path originally produced production environments only. I extended it so non-production comes from the same code, which means a change to the lifecycle path is exercised before it reaches a production cell.
+- Control plane: Kubernetes, Nomad, Consul, Vault, Terraform, across bare-metal sites, including a Kubernetes-only site.
 - Stack: Go, Python, Linux, Kubernetes, Nomad, Consul, Vault, Terraform.
 ```
 
