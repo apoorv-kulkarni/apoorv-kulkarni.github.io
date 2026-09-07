@@ -85,12 +85,10 @@ Spell the current title out: **Senior Software Engineer, Reliability** (not “S
 ```
 Founding engineer on the pod that owns compute-cell lifecycle: provision, validate, drain, repair, and decommission. Defined the teardown path when none existed, then reused it.
 
-- Extended the generator and one-click orchestrator so non-production environments are first-class — the platform had only generated production. Cut Terraform init in a production workspace from minutes to about a second.
-- Drove the first edge environments of that kind in a production colo, then encoded the gaps so later environments did not pay the same cost.
-- Brought production cells up across new sites, including a Kubernetes-only replacement site and intern-led bringup through to a traffic handoff.
-- Root-cause when the cluster reports healthy but is not serving — health checks on the wrong TLS port, a process that reloaded config but never restarted.
-- Orchestration across Kubernetes and Nomad, with Consul for service discovery, Vault for secrets, and Terraform for declarative fleet state.
-- Stack: Go, Python, Linux, Kubernetes, Nomad, Consul, Vault, Terraform, Prometheus, Grafana.
+- Automated cell bringup. Cut Terraform init in a production workspace from minutes to about a second.
+- Production cells at new sites, including a Kubernetes-only site.
+- Control plane: Kubernetes, Nomad, Consul, Vault, Terraform.
+- Stack: Go, Python, Linux, Kubernetes, Nomad, Consul, Vault, Terraform.
 ```
 
 ### Position 2 — prior title at Roblox
