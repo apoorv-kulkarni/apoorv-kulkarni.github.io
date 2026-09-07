@@ -2,7 +2,7 @@
 
 ## Super Concise Intro
 
-Senior Software Engineer, Reliability at Roblox. I build compute and cluster infrastructure: cell lifecycle, edge PoPs, and the automation that turns bare-metal machines into production capacity for 140M+ daily active users.
+Senior Software Engineer, Reliability at Roblox. I build compute and cluster infrastructure: fleet lifecycle and the automation that brings bare-metal capacity into production for 140M+ daily active users.
 
 ## Long Intro
 
