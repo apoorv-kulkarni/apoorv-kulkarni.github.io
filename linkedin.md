@@ -135,10 +135,19 @@ Delete: “the whole nine yards,” “Sometimes I have fun building slack integ
 
 ## 6. Techlore
 
-Cut to two lines. Delete “Think; Think again; Debate; Negotiate” and the fifteen-bullet list.
+Keep the role. The stack is old; the customer work is not. Cut the fifteen-bullet dump and “Think; Think again; Debate; Negotiate.” Lead with sitting in the room with customers.
+
+**Title:** Software Developer  
+**Dates:** August 2011 – July 2013  
+**Location:** Pune Area, India
 
 ```
-Software developer at a small product shop. Led a team of four. Cut a business-critical process from 30 minutes to under a minute.
+Small product shop. I wore a lot of hats, including sitting with customers face to face.
+
+- Worked directly with customers on requirements, delivery, and training — including going on-site / offshore to deploy and train the people using the product.
+- Translated what customers actually needed into software, and owned the conversation between the client and the rest of the team.
+- Led a team of four and took three projects through to ship.
+- Cut a business-critical process from 30 minutes to under a minute.
 ```
 
 ---
