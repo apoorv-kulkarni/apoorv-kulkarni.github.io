@@ -2,14 +2,16 @@
 
 ## Super Concise Intro
 
-Senior Software Engineer, Reliability focused on platform engineering, cloud infrastructure, and backend systems. I build reliable, scalable systems and the tooling that keeps them running.
+Senior Software Engineer, Reliability at Roblox. I build compute and cluster infrastructure: fleet lifecycle and the automation that brings bare-metal capacity into production for 140M+ daily active users.
 
 ## Long Intro
 
-I'm a Senior Software Engineer, Reliability at Roblox, where I work on platform reliability, infrastructure, and the internal systems that keep things running at scale.
+I build the systems that turn raw machines into usable compute.
 
-Over the course of my career I've worn a lot of hats — SRE, backend engineer, DevOps, occasional team lead — across products ranging from desktop apps to enterprise SaaS. That breadth has made me effective at seeing the full picture: from database design and backend APIs to the cloud infrastructure and CI/CD pipelines that ship and run it all.
+At Roblox I work on cluster and cell lifecycle: how capacity is provisioned, brought into service, drained, repaired, and retired across a global bare-metal fleet. The platform serves 140M+ daily active users, so a stuck provisioning step or a bad drain is a user-visible outage, not a ticket.
 
-My focus now is on scalability and platform engineering: building the foundations that let engineering teams move fast without breaking things.
+I write Go and Python that talks to real hardware, with Kubernetes and Nomad for orchestration, Consul and Vault for discovery and secrets, and Terraform for declarative state.
 
-I'm a continuous learner — I stay current by reading broadly, experimenting with new tools and technology, and applying what works.
+Before Roblox, five and a half years at IBM on API Connect: production SRE across 30+ cloud environments worldwide, plus the internal tooling that kept them stable.
+
+I care about the parts that are hard to see. What happens when a node dies mid-drain. Why a config that is correct on disk is not the one the running process loaded. How you tell a cluster reporting healthy from a cluster actually serving traffic.
