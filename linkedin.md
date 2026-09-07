@@ -128,6 +128,8 @@ Small product shop. I wore a lot of hats, including sitting with customers face 
 - Cut a business-critical process from 30 minutes to under a minute.
 ```
 
+The site is the shorter portfolio and omits that 30-minutes-to-under-a-minute outcome. LinkedIn can keep it.
+
 ---
 
 ## 7. Cengage Learning
