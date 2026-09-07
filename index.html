@@ -327,6 +327,41 @@
             margin-bottom: 0.15rem;
         }
 
+        .spec-bullets {
+            list-style: none;
+            margin: 0.85rem 0 0;
+            padding: 0;
+        }
+
+        .spec-bullets li {
+            position: relative;
+            padding: 0.55rem 0 0.55rem 1.1rem;
+            font-size: 1.05rem;
+            line-height: 1.45;
+        }
+
+        .spec-bullets li + li {
+            border-top: 1px solid var(--rule-color);
+        }
+
+        .spec-bullets li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 1.05rem;
+            width: 0.35rem;
+            height: 0.35rem;
+            border-radius: 50%;
+            background: currentColor;
+            opacity: 0.45;
+        }
+
+        @media (min-width: 769px) {
+            .spec-bullets li {
+                font-size: 1.15rem;
+            }
+        }
+
         @media (min-width: 769px) {
             .page {
                 padding-top: 5.5rem;
@@ -578,13 +613,9 @@
                     </div>
                     <div class="spec-group">
                         <h2 class="spec-group-title">Education</h2>
-                        <ul class="spec-list">
-                            <li class="spec-item">
-                                <div class="spec-row">
-                                    <span class="spec-label">Degrees</span>
-                                    <span class="spec-value">M.S. Computer Engineering, Syracuse University. B.Eng. Computer Engineering, Savitribai Phule Pune University.</span>
-                                </div>
-                            </li>
+                        <ul class="spec-bullets">
+                            <li>M.S. Computer Engineering, Syracuse University (2013–2014)</li>
+                            <li>B.Eng. Computer Engineering, Savitribai Phule Pune University (2008–2011)</li>
                         </ul>
                     </div>
                 </div>
