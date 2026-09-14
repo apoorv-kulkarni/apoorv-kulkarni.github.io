@@ -76,7 +76,7 @@ I also ship Go on the side, including Vigiles, a zero-dependency supply chain sc
 
 One tenure on LinkedIn and on the site. Recruiter will have both open. Do not split into two titles until there is a real title-change date.
 
-The site is the short portfolio: Role, Tenure, Scope. Scope is one row: Windows fleet decommission onto Linux. Control-plane tools live on Skills. The cluster lifecycle, bringup, and non-production bullets below are LinkedIn-only.
+The site is the short portfolio: Role, Tenure, Scope. Scope is one row: Windows fleet decommission onto Linux, plus building new edge sites and the automation that stands them up. Control-plane tools live on Skills. The cluster lifecycle, bringup, and non-production bullets below are LinkedIn-only.
 
 **Title:** Senior Software Engineer, Reliability
 **Dates:** September 2020 to Present
@@ -86,7 +86,7 @@ The site is the short portfolio: Role, Tenure, Scope. Scope is one row: Windows 
 Worked on cluster lifecycle. Clusters were being built and run, but never systematically taken down.
 
 - Maintained the Windows fleet, then defined the decommission path and helped teams migrate off it onto Linux. Retiring Windows stopped being a one-off project.
-- Built the automation that stands a cluster up from a declared input instead of a hand-run sequence. Restructuring the workspace and state layout brought Terraform init in a production workspace from minutes to roughly a second.
+- Built new edge sites, and the automation that stands a cluster up from a declared input instead of a hand-run sequence. Restructuring the workspace and state layout brought Terraform init in a production workspace from minutes to roughly a second.
 - The bringup path originally produced production environments only. I extended it so non-production comes from the same code, which means a change to the lifecycle path is exercised before it reaches a production cluster.
 - Control plane: Kubernetes, Nomad, Consul, Vault, Terraform, across bare-metal sites.
 ```
