@@ -4,7 +4,7 @@ Apply in this order. Each step is independent; headline and top skills take two 
 
 Do not paste bracketed placeholders. Fill them or drop the bullet.
 
-Numbers not in your LinkedIn PDF were left out on purpose (cell count, cluster count, regions, time-to-serve, MTTR, PoP count, incident volume). Add any you can say publicly. Do not invent them.
+Numbers not in your LinkedIn PDF were left out on purpose (cluster count, regions, time-to-serve, MTTR, site count, incident volume). Add any you can say publicly. Do not invent them.
 
 Site and LinkedIn use one Roblox position: Senior Software Engineer, Reliability, September 2020 to Present. There is no public title-change date.
 
@@ -18,7 +18,7 @@ Site and LinkedIn use one Roblox position: Senior Software Engineer, Reliability
 Senior Software Engineer, Reliability @ Roblox | Compute & Cluster Infrastructure | Kubernetes, Bare Metal, Distributed Systems
 ```
 
-Keeps your real title. Puts the search terms in the field LinkedIn weights most.
+Keeps your real title. Puts compute and cluster search terms in the headline.
 
 **Longer option if you want more keywords (under 220):**
 
@@ -51,7 +51,7 @@ Paste as separate paragraphs. If the live profile is a wall of text, that is a r
 ```
 I build the systems that turn raw machines into usable compute.
 
-At Roblox I work on cluster and cell lifecycle: how capacity is provisioned, brought into service, drained, repaired, and retired across a global bare-metal fleet. The platform serves 140M+ daily active users, so a stuck provisioning step or a bad drain is a user-visible outage, not a ticket.
+At Roblox I work on cluster lifecycle: how capacity is provisioned, brought into service, drained, repaired, and retired across a global bare-metal fleet. The platform serves 140M+ daily active users. A stuck provisioning step or a bad drain is a reliability problem, not just a ticket.
 
 I write Go and Python that talks to real hardware in real datacenters, with Kubernetes and Nomad for orchestration, Consul and Vault for discovery and secrets, and Terraform for declarative state.
 
@@ -76,18 +76,18 @@ I also ship Go on the side, including Vigiles, a zero-dependency supply chain sc
 
 One tenure on LinkedIn and on the site. Recruiter will have both open. Do not split into two titles until there is a real title-change date.
 
-The site is the short portfolio: Role, Tenure, Scope. Scope is one row: Windows fleet decommission onto Linux, then the control-plane stack across bare-metal sites. The cell lifecycle, bringup, and non-production bullets below are LinkedIn-only.
+The site is the short portfolio: Role, Tenure, Scope. Scope is one row: Windows fleet decommission onto Linux. Control-plane tools live on Skills. The cluster lifecycle, bringup, and non-production bullets below are LinkedIn-only.
 
 **Title:** Senior Software Engineer, Reliability
 **Dates:** September 2020 to Present
 **Location:** San Francisco Bay Area
 
 ```
-Founding engineer on the pod that owns compute-cell lifecycle. Cells were being built and run, but never systematically taken down. I defined the decommission path and made it repeatable.
+Worked on cluster lifecycle. Clusters were being built and run, but never systematically taken down.
 
 - Maintained the Windows fleet, then defined the decommission path and helped teams migrate off it onto Linux. Retiring Windows stopped being a one-off project.
-- Built the automation that stands a cell up from a declared input instead of a hand-run sequence. Restructuring the workspace and state layout brought Terraform init in a production workspace from minutes to roughly a second.
-- The bringup path originally produced production environments only. I extended it so non-production comes from the same code, which means a change to the lifecycle path is exercised before it reaches a production cell.
+- Built the automation that stands a cluster up from a declared input instead of a hand-run sequence. Restructuring the workspace and state layout brought Terraform init in a production workspace from minutes to roughly a second.
+- The bringup path originally produced production environments only. I extended it so non-production comes from the same code, which means a change to the lifecycle path is exercised before it reaches a production cluster.
 - Control plane: Kubernetes, Nomad, Consul, Vault, Terraform, across bare-metal sites.
 ```
 
@@ -127,10 +127,10 @@ Small product shop. I wore a lot of hats, including sitting with customers face 
 - Worked directly with customers on requirements, delivery, and training - including going on-site / offshore to deploy and train the people using the product.
 - Translated what customers actually needed into software, and owned the conversation between the client and the rest of the team.
 - Led a team of four and took three projects through to ship.
-- Cut a business-critical process from 30 minutes to under a minute.
+- Cut a business-critical process from 30 minutes to a minute.
 ```
 
-The site is the shorter portfolio and omits that 30-minutes-to-under-a-minute outcome. LinkedIn can keep it.
+The site is the shorter portfolio and omits that 30-minutes-to-a-minute outcome. LinkedIn can keep it. Use "30 minutes to a minute" pending confirmation of a more precise result.
 
 ---
 
@@ -159,4 +159,4 @@ Leave as-is:
 
 ## Why this order
 
-Your About already said compute, 140M+ DAU, cells, and fleet lifecycle. The PDF's Experience and pinned skills did not. Recruiters search headline + skills + job text. "Scaling Infra @ Roblox" plus Chef/Prometheus/Grafana plus one generic Roblox sentence is why you read as a 2018 SRE generalist instead of someone who runs physical fleets at Roblox scale.
+Your About already said compute, 140M+ DAU, clusters, and fleet lifecycle. The PDF's Experience and pinned skills did not. Recruiters search headline + skills + job text. "Scaling Infra @ Roblox" plus Chef/Prometheus/Grafana plus one generic Roblox sentence is why you read as a 2018 SRE generalist instead of someone who runs physical fleets at Roblox scale.

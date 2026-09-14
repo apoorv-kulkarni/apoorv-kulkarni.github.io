@@ -113,6 +113,27 @@
             line-height: 1.7;
         }
 
+        .contact-invite {
+            font-size: 0.95rem;
+            color: var(--text-color);
+            max-width: 38rem;
+            margin-top: 1rem;
+            line-height: 1.7;
+        }
+
+        .contact-linkedin {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .contact-linkedin:hover,
+        .contact-linkedin:focus {
+            color: var(--hover-color);
+            text-decoration: underline;
+        }
+
         .social-links {
             display: flex;
             gap: 0.85rem;
@@ -168,6 +189,7 @@
 
         .theme-toggle:focus-visible,
         .social-icon:focus-visible,
+        .contact-linkedin:focus-visible,
         .spec-tab:focus-visible {
             outline: 2px solid var(--hover-color);
             outline-offset: 2px;
@@ -502,6 +524,7 @@
                     </svg>
                 </a>
             </nav>
+            <p class="contact-invite">Interested in connecting with people building compute infrastructure and reliable platforms. <a href="https://www.linkedin.com/in/apoorvkulkarni" class="contact-linkedin">Connect on LinkedIn</a></p>
         </header>
 
         <section class="spec-tabs" data-spec-tabs>
@@ -536,7 +559,7 @@
                             <li class="spec-item">
                                 <div class="spec-row">
                                     <span class="spec-label">Scope</span>
-                                    <span class="spec-value">Maintained the Windows fleet, then defined the decommission path and helped teams migrate onto Linux. Kubernetes, Nomad, Consul, Vault, Terraform, across bare-metal sites.</span>
+                                    <span class="spec-value">Maintained the Windows fleet, then defined the decommission path and helped teams migrate onto Linux.</span>
                                 </div>
                             </li>
                         </ul>
@@ -570,7 +593,7 @@
                             <li class="spec-item">
                                 <div class="spec-row">
                                     <span class="spec-label">Role</span>
-                                    <span class="spec-value">Software Developer, 2011–2013. Pune. Small shop - I wore a lot of hats.</span>
+                                    <span class="spec-value">Software Developer, 2011–2013. Pune.</span>
                                 </div>
                             </li>
                             <li class="spec-item">
@@ -624,20 +647,14 @@
                         </li>
                         <li class="spec-item">
                             <div class="spec-row">
-                                <span class="spec-label">Reliability</span>
-                                <span class="spec-value">Site reliability, incident response</span>
-                            </div>
-                        </li>
-                        <li class="spec-item">
-                            <div class="spec-row">
                                 <span class="spec-label">Health</span>
-                                <span class="spec-value">Fleet health vs. actually serving traffic: signals answer whether a cell is serving, not whether its processes started.</span>
+                                <span class="spec-value">Health signals should distinguish systems serving traffic from processes merely starting.</span>
                             </div>
                         </li>
                         <li class="spec-item">
                             <div class="spec-row">
                                 <span class="spec-label">Convergence</span>
-                                <span class="spec-value">Config that is correct in the repo is not config the running process loaded. The lifecycle path verifies the loaded state, not the intended one.</span>
+                                <span class="spec-value">Verify the configuration a running process has loaded against the configuration declared in the repository.</span>
                             </div>
                         </li>
                         <li class="spec-item">

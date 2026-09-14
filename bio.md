@@ -8,7 +8,7 @@ Senior Software Engineer, Reliability at Roblox. I build compute and cluster inf
 
 I build the systems that turn raw machines into usable compute.
 
-At Roblox I work on cluster and cell lifecycle: how capacity is provisioned, brought into service, drained, repaired, and retired across a global bare-metal fleet. The platform serves 140M+ daily active users, so a stuck provisioning step or a bad drain is a user-visible outage, not a ticket.
+At Roblox I work on cluster lifecycle: how capacity is provisioned, brought into service, drained, repaired, and retired across a global bare-metal fleet. The platform serves 140M+ daily active users. A stuck provisioning step or a bad drain is a reliability problem, not just a ticket.
 
 I write Go and Python that talks to real hardware, with Kubernetes and Nomad for orchestration, Consul and Vault for discovery and secrets, and Terraform for declarative state.
 
